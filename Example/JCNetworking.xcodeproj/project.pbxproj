@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A6E5EE90517115E46872C59A /* Pods_JCNetworking_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E410DCC08012B58565635BDF /* Pods_JCNetworking_Tests.framework */; };
+		FD07AC5022647196004C40CE /* FirstRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FD07AC4F22647196004C40CE /* FirstRequest.m */; };
+		FDCA31BF2264784000D7952A /* SecondRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCA31BE2264784000D7952A /* SecondRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		149695F3637D70A19FBF14BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		1BCB713AC27C141219FF8394 /* JCNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JCNetworking.podspec; path = ../JCNetworking.podspec; sourceTree = "<group>"; };
-		262F4385E2B3F8AAAE646B1C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		149695F3637D70A19FBF14BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1BCB713AC27C141219FF8394 /* JCNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JCNetworking.podspec; path = ../JCNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		262F4385E2B3F8AAAE646B1C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2EAA7DC6782C4F8764A57FB7 /* Pods-JCNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCNetworking_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCNetworking_Example/Pods-JCNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JCNetworking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCNetworking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +69,10 @@
 		917D8C223B68C350ACD84B88 /* Pods-JCNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCNetworking_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCNetworking_Example/Pods-JCNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E410DCC08012B58565635BDF /* Pods_JCNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E7209DBDCF7523C6FF9DAE /* Pods_JCNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD07AC4E22647196004C40CE /* FirstRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstRequest.h; sourceTree = "<group>"; };
+		FD07AC4F22647196004C40CE /* FirstRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstRequest.m; sourceTree = "<group>"; };
+		FDCA31BD2264784000D7952A /* SecondRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondRequest.h; sourceTree = "<group>"; };
+		FDCA31BE2264784000D7952A /* SecondRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JCViewController.h */,
 				6003F5A6195388D20070C39A /* JCViewController.m */,
+				FD07AC4E22647196004C40CE /* FirstRequest.h */,
+				FD07AC4F22647196004C40CE /* FirstRequest.m */,
+				FDCA31BD2264784000D7952A /* SecondRequest.h */,
+				FDCA31BE2264784000D7952A /* SecondRequest.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -347,12 +357,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JCNetworking_Example/Pods-JCNetworking_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/JCNetworking/JCNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JCNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +380,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* JCAppDelegate.m in Sources */,
+				FDCA31BF2264784000D7952A /* SecondRequest.m in Sources */,
 				6003F5A7195388D20070C39A /* JCViewController.m in Sources */,
+				FD07AC5022647196004C40CE /* FirstRequest.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
